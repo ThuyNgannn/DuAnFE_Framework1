@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { BannerComponent } from './banner/banner.component';
-import { CategoriesComponent } from './categories/categories.component';
+import { HeroAreaComponent } from './hero-area/hero-area.component';
+import { PopularDealsComponent } from './popular-deals/popular-deals.component';
+import { AllCategoryComponent } from './all-category/all-category.component';
+import { CallToActionComponent } from './call-to-action/call-to-action.component';
 import { FooterComponent } from './footer/footer.component';
-import { ProductsComponent } from './products/products.component';
-import { SearchComponent } from './search/search.component';
-import { HomeComponent } from './home/home.component';
+
 
 
 
@@ -17,12 +17,11 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    BannerComponent,
-    CategoriesComponent,
+    HeroAreaComponent,
+    PopularDealsComponent,
+    AllCategoryComponent,
+    CallToActionComponent,
     FooterComponent,
-    ProductsComponent,
-    SearchComponent,
-    HomeComponent,
  
 
   ],
