@@ -1,0 +1,74 @@
+<div id="slide-out" class="side-nav fixed" style="background-image: url(img/bg11.png);">
+    <ul class="custom-scrollbar">
+      <li class="logo-sn waves-effect py-3">
+        <div class="text-center">
+          <a href="index.html" class="pl-0"><img src="img/logo2.png"></a>
+        </div>
+      </li>
+      <li>
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a href="" class="collapsible-header waves-effect"><i class="fas fa-home"></i>Trang chủ</a>
+          </li>
+          <li>
+            <a href="" class="collapsible-header waves-effect"><i class="fas fa-credit-card"></i>Giới thiệu</a>
+          </li>
+          <li>
+            <a href="" class="collapsible-header waves-effect"><i class="fas fa-phone-square-alt"></i>Liên hệ</a>
+          </li>
+          <li>
+            <a href="#feedback" class="collapsible-header waves-effect"><i class="fas fa-comments"></i>Góp ý</a>
+          </li>
+          <li>
+            <a href="#FAQ" class="collapsible-header waves-effect"><i class="fas fa-question-circle"></i>Hỏi đáp</a>
+          </li>
+          <li>
+            <a href="" class="collapsible-header waves-effect arrow-r"><i class="fas fa-list"></i>Danh mục<i class="fas fa-angle-down rotate-icon"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <!-- Placeholder for dynamic list content, if needed via JavaScript -->
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="sidenav-bg mask-light"></div>
+  </div>
+  <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
+    <div class="float-left">
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+    </div>
+    <div class="breadcrumb-dn mr-auto">
+      <p><strong>Online Training</strong></p>
+    </div>
+    <div class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle waves-effect" href="" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block"></span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="userDropdown">
+        <a class="dropdown-item" href="#register">Đăng kí</a>
+        <a class="dropdown-item" href="#login">Đăng nhập</a>
+        <a class="dropdown-item" href="#forgotpassword">Quên mật khẩu</a>
+        <!-- Conditional content can be handled by JavaScript -->
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Additional JavaScript for dynamic behavior -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var user = null; // Example variable to check user state
+  
+    // Conditional display of menu items based on user status
+    const menuItems = document.querySelector('.dropdown-menu');
+    if (user) {
+      menuItems.innerHTML += `<a class="dropdown-item" href="">Thông tin cá nhân</a>
+                               <a class="dropdown-item" href="#changepassword">Đổi mật khẩu</a>
+                               <a class="dropdown-item" href="">Đăng xuất</a>`;
+    }
+  
+    // Additional event listeners can be added here if necessary
+  });
+  </script>
+  
