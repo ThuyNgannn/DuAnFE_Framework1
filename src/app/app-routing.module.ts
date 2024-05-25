@@ -22,39 +22,39 @@ import { AuthService } from './auth.service';
 
 
 
-    const routes: Routes = [
-
-
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent },
-    //product
-    { path: 'products', children:
-    [
-      { path: '', component: ProductlistComponent },
-      { path: 'add', component: ProductAddComponent },
-      { path: 'edit', component: ProductEditComponent},
-      
+const routes: Routes = [
+  {
+    path: 'admin',
+    children: [
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'home', component: HomeComponent },
+      {
+        path: 'products',
+        children: [
+          { path: '', component: ProductlistComponent },
+          { path: 'add', component: ProductAddComponent },
+          { path: 'edit', component: ProductEditComponent },
+        ]
+      },
+      {
+        path: 'category',
+        children: [
+          { path: '', component: CatelistComponent },
+          { path: 'add', component: CateAddComponent },
+          { path: 'edit', component: CateEditComponent },
+        ]
+      },
+      {
+        path: 'accout',
+        children: [
+          { path: '', component: AcccoutlistComponent },
+        ]
+      },
+      { path: '**', component: PagenotfoundComponent }
     ]
-    },
-    //category
-    { path: 'category', children:
-    [
-      { path: '', component: CatelistComponent },
-      { path: 'add', component: CateAddComponent },
-      { path: 'edit', component: CateEditComponent},
+  }
+];
 
-    ]
-    },
-    //acccout
-    { path: 'acccout', children:
-    [
-      { path: '', component: AcccoutlistComponent },
-    ]
-    },
-    //pagenotfound
-    { path: '**', component: PagenotfoundComponent }
-
-    ];
 
       @NgModule({
       imports: [ RouterModule.forRoot(routes) ],
