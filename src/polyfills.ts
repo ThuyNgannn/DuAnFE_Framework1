@@ -74,3 +74,9 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
  * Need to import at least one locale-data with intl.
  */
 // import 'intl/locale-data/jsonp/en';
+<<<<<<< HEAD
+=======
+
+import 'zone.js';
+import 'reflect-metadata';
+>>>>>>> a8a9809a65c59729c6ddf6b0b9eb7f4934a209f0
