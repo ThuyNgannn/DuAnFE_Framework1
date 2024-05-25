@@ -6,13 +6,13 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
+import { HomeClientComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactComponent } from './contact/contact.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { ProductlistComponent } from './productlist/productlist.component';
+import { ProductlistClientComponent } from './productlist/productlist.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
@@ -23,14 +23,13 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     FooterComponent,
     MainComponent,
     AboutComponent,
-    HomeComponent,
+    HomeClientComponent,
     ContactComponent,
     FeedbackComponent,
     LoginComponent,
     RegisterComponent,
-    ProductlistComponent,
+    ProductlistClientComponent,
     ProductDetailComponent,
-
   ],
   imports: [
     BrowserModule,
