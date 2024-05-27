@@ -1,7 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-
     "name": "asm1"
   },
   "apps": [
@@ -33,16 +32,13 @@
       }
     }
   ],
-
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"
     }
   },
-
   "lint": [
     {
-
       "project": "src/tsconfig.app.json",
       "exclude": "**/node_modules/**"
     },

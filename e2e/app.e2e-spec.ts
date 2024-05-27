@@ -1,11 +1,6 @@
 import { AppPage } from './app.po';
 
-
-
-describe('framework1 App', () => {
-
 describe('asm1 App', () => {
-
   let page: AppPage;
 
   beforeEach(() => {

@@ -5,7 +5,7 @@ import { IProduct } from './product';
   templateUrl: './productlist.component.html',
   styleUrls: ['./productlist.component.css']
 })
-export class ProductlistComponent implements OnInit {
+export class ProductlistClientComponent implements OnInit {
   products: IProduct[] = [];
   listProducts: IProduct[] = [
     {

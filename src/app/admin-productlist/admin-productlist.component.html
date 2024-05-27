@@ -1,0 +1,46 @@
+<div class="container-fluid pt-4 px-4">
+  <div class="row vh-100 bg-secondary justify-content-center mx-0">
+  <div class="row g-4">
+      
+      <div class="col-12">
+          <div class="bg-secondary rounded h-100 p-4">
+              <h6 class="mb-4">Danh sách Sản phẩm</h6>
+              <div class="table-responsive">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th scope="col">ID</th>
+                              <th scope="col">Tên sản phẩm</th>
+                              <th scope="col">Hình</th>
+                              <th scope="col">Giá</th>
+                              <th scope="col">Mô tả</th>
+                              <th scope="col">Loại sản phẩm</th>
+                              <th scope="col">Trạng thái</th>
+                              <th scope="col">Thao tác</th>
+
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th>1</th>
+                              <th>Sản phẩm 1</th>
+                              <th>
+                                  <img class="h-100" style="max-width: 100px; max-height: 100px;" src="https://product.hstatic.net/200000722513/product/pc__3__99a504041664478dac81c6a79a512233_medium.png" alt="Ảnh sp">
+                              </th>
+                              <th>1.000.000</th>
+                              <th>Mô tả 1</th>
+                              <td>Loại sản phẩm 1</td>
+                              <td>1</td>
+                              <td>
+                                  <button type="button" class="btn btn-info"><a   [routerLink]="['/admin/products', 'edit']"><i class="fa fa-edit"></i></a></button>
+                                  <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>  
