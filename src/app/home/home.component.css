@@ -5,3 +5,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+#main-section {
+    background-color: #FFFFFF !important; /* Thay thế nền đen bằng nền trắng */
+  }
+  
