@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes  } from '@angular/router';
+//Client
 import { HomeClientComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -7,8 +8,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { ProductlistClientComponent } from './productlist/productlist.component';
 import { ClientLayoutComponent } from './client-layout/client-layout.component';
+//Admin
 import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminProductlistComponent } from './admin-productlist/admin-productlist.component';
@@ -39,9 +40,6 @@ const routes: Routes = [
       {
         path: 'admin',
         component: AdminLayoutComponent,
-        // children: [
-        //   { path: 'home', component: AdminHomeComponent, canActivate: [AuthGuard] }
-        // ]
         children: [
           { path: '', redirectTo: 'home', pathMatch: 'full' },
           { path: 'home', component: AdminHomeComponent, canActivate: [AuthGuard] },
